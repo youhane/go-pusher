@@ -1,61 +1,31 @@
-# HOW TO START
+# Go Photo Pusher
 
-### First
+Made with Go and VueJs
 
-- make the folder/clone this
-- go mod init example.com/try echo
-- go run main.go
+<br>
 
-### Then Run this
+## How to start (if you're unfamiliar with Go)
 
+1. Make the folder/clone this repo
+2. Run go mod init example.com/try echo in your terminal
+3. Run this in your terminal
+
+``` go
 go get github.com/labstack/echo
 go get github.com/labstack/echo/middleware
 go get github.com/mattn/go-sqlite3
 go get github.com/pusher/pusher-http-go
-
-
-## Put this in the main.go file
-
-```
-import (
-	"database/sql"
-	"io"
-	"net/http"
-	"os"
-
-	"github.com/labstack/echo"
-	"github.com/labstack/echo/middleware"
-	_ "github.com/mattn/go-sqlite3"
-	pusher "github.com/pusher/pusher-http-go"
-) 
 ```
 
-If there are squiggly lines, hover on the red ones then click the get package
+4. Make sure the code is there
+5. Run go run main.go
 
-Make the pusher app credentials
+<br>
 
-Then copy all of the code
-Understand it
-Update the pusher credentials
-Then youre all done
-Just go run main.go
+## Notes
 
-Refresh the page if the picture wont appear
-
-If you want to delete the files, delete in the public/uploads folder per files
-
-# Folder information
-
-## database
-
-Self explanatory
-
-## public
-
-For public files, such as html and images
-
-### Notes
-
-If the squigly lines wont dissapear in vscode, try opening the project/folder in a new window, that makes the folder a root
-
-Buka foldernya di window baru, yang isinya dia doang
+- If there are errors on the imports in main.go, most problems are that you haven't installed the package
+- Don't forget to make and use the pusher app credentials
+- Refresh the page if the picture wont appear
+- If you want to delete the pics, delete in the public/uploads folder per pic
+- If the project won't run, try opening it in another window of the text editor, with Go-Pusher as the root folder
